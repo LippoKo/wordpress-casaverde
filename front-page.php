@@ -5,7 +5,9 @@
  */
 get_header()
 ?>
-<div class="page-home"></div>
 
 <?php get_template_part('template-parts/home/home-page') ?>
+<?php echo get_template_part('template-parts/home/get-plant'); ?>
+<?php echo get_template_part('template-parts/home/offers'); ?>
+
 <?php get_footer(); ?>

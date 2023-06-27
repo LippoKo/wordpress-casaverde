@@ -30,13 +30,16 @@
     height: 6rem;
     z-index: 1000;
     transition: all 0.4s;
-    background-color: white;
+    background: linear-gradient(to right, rgb(255, 255, 255), $contrast);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     .sandwitch-wrap {
       top: 0;
     }
     .main-header__cart-icon {
       top: 1rem;
+    }
+    .logo {
+      top: -0.5rem;
     }
   }
   &__main-menu {

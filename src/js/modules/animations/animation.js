@@ -36,4 +36,31 @@ export default function gsapAnimation() {
     gsap.from(input, { duration: 2, opacity: 0, y: -200 });
   }
   homeIntro();
+
+  function getPlant() {
+    gsap.from('.get-plant', {
+      duration: 3,
+      opacity: 0,
+
+      scrollTrigger: {
+        trigger: '.get-plant',
+        start: 'top 100%',
+      },
+    });
+  }
+  getPlant();
+
+  function offers() {
+    gsap.from('.offers__item', {
+      duration: 1.5,
+      opacity: 0,
+      x: 150,
+      stagger: 0.25,
+      scrollTrigger: {
+        trigger: '.offers__item',
+        start: 'top 80%',
+      },
+    });
+  }
+  offers();
 }

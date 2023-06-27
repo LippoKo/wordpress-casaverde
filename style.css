@@ -20,6 +20,18 @@ Version: 0.4
   background-image: url(assets/i/static/mail.svg);
   background-repeat: no-repeat;
 }
+.offers__button::before {
+  content: '';
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  width: 1.5rem;
+  height: 1rem;
+  background-image: url(assets/i/static/seta.svg);
+  background-repeat: no-repeat;
+}
 
 @font-face {
   font-family: Poppins;
