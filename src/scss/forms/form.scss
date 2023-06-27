@@ -1,0 +1,40 @@
+.form {
+  position: relative;
+  padding-top: 3.5rem;
+
+  input[type="email"] {
+    padding-left: 5rem;
+    border: none;
+    width: 60%;
+    height: 7.5rem;
+    background: #fff;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.06);
+    opacity: 0.5;
+    outline: none;
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  .wpcf7-submit {
+    position: relative;
+    right: 1.5rem;
+    padding: 0 3.2rem;
+    border: none;
+    height: 7.5rem;
+    color: #fff;
+    text-align: center;
+    background: rgba(255, 203, 71, 1);
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    @media screen and (max-width: 1300px) {
+      right: initial;
+    }
+
+    &:hover {
+      background: linear-gradient(to right, rgba(255, 203, 71, 0.8), rgba(141, 206, 151, 1));
+    }
+  }
+}
